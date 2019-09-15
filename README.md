@@ -2,26 +2,17 @@
 
 ## Description
 
-This is an Amazon-like storefront which will take in orders from customers and deplete stock from the store's inventory. 
+This is an Amazon-like storefront which will take in orders from customers and deplete stock from the store's inventory. This Command Line Interface (CLI) application supports users to manage products in stock. 
 
-
-
-
-
-
-
-
-As a bonus task, you can program your app to track product sales across your store's departments and then provide a summary of the highest-grossing departments in the store.
-
-Make sure you save and require the MySQL and Inquirer npm packages in your homework files--your app will need them for data input and storage.
-
-## Deployed Page:
-
-Not Available for this program.
+* With this CLI app, users can...
+    * View Products for Sale
+    * View Low Inventory
+    * Add to Inventory
+    * Add New Product
 
 ## Use Example:
-
-### ![use-example](./assets/images/demo.gif)
+<!-- ### ![use-example](./assets/images/demo.gif) -->
+### ![use-example](./assets/images/1.gif)
 
 
 ## Screen Captures:
@@ -53,11 +44,11 @@ Not Available for this program.
 
 ### Dependencies
 
-* best viewed laptop or desktop
+* This node application uses command line interface (ex. git bash, termainal) to execute program.
 
 ### Installing
 
-* none necessary - use browser to view
+* Git Bash, Or Any types of Command Line Interface of your choose
 
 ### Executing program
 
@@ -74,25 +65,27 @@ Not Available for this program.
     6. Remove titles from the Save List with checkboxes and delete button.
     7. Click on a movie title in Save List to load detail page with it 
 
+## Deployed Page:
+* Not Available for this program.
+
 ## Enhancements
 
 * list of possible enhancements
-    - [x] improved detail page layout
-    - [x] improved typography
-    - [x] actor/actress search
-    - [x] section with movie reviews (New York Time api)
-    - [ ] responsiveness
-    - [ ] make Save List modal available on Search and Detail pages
+    - [ ] Challenge #3: Supervisor View has not been implemented yet.
+        * This app should track product sales across your store's departments and should provide a summary of the highest-grossing departments in the store.
     
 ## Authors
 
 * Hyeong Suk Kim - whddkf2004@gmail.com
 
-## License
+## Technologies used in the App
+* npm packages (`mysql`, `inquirer`)
+    * MySQL and Inquirer npm packages are needed for data input and storage.
+* MySQL
+* JavaScript
 
-* 0.1 API attribution details go here
+## License
 
 ## Version History
 
 * 0.1  Initial Release
-
