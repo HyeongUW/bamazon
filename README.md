@@ -61,7 +61,7 @@ There are two individual applications for customers and supervisors.
 
 * list of possible enhancements
     - [ ] Challenge #3: Supervisor View has not been implemented yet.
-        * [ ] View Product Sales by 
+        * [ ] View Product Sales by department
         * [x] Department
     * Create New Department
         * This app should track product sales across your store's departments and should provide a summary of the highest-grossing departments in the store.
