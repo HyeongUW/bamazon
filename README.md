@@ -30,7 +30,8 @@ There are two individual applications for customers and supervisors.
 
     4. Add New Product
 ### ![use-example](./assets/images/4.gif)
-!['4.b'](./assets/images/4.b.png)
+
+        * Result
 !['4.b'](https://github.com/HyeongUW/bamazon/blob/master/assets/images/4.b.PNG)   
 
     5. Placing Order
