@@ -5,14 +5,29 @@
 This is an Amazon-like storefront which will take in orders from customers and deplete stock from the store's inventory. This Command Line Interface (CLI) application supports users to manage products in stock. 
 
 * With this CLI app, users can...
-    * View Products for Sale
-    * View Low Inventory
-    * Add to Inventory
-    * Add New Product
+    1. View Products for Sale
+    2. View Low Inventory
+    3. Add to Inventory
+    4. Add New Product
+    5. Placing Order
 
 ## Use Example:
-<!-- ### ![use-example](./assets/images/demo.gif) -->
+
+    1. View Products for Sale
+
 ### ![use-example](./assets/images/1.gif)
+    2. View Low Inventory
+    
+### ![use-example](./assets/images/2.gif)
+    3. Add to Inventory
+    
+### ![use-example](./assets/images/3.gif)
+    4. Add New Product
+### ![use-example](./assets/images/4.gif)
+    5. Placing Order
+### ![use-example](./assets/images/5.gif)
+
+
 
 
 ## Screen Captures:
