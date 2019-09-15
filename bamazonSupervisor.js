@@ -22,38 +22,95 @@ showingOptions = function() {
           type: 'list',
           name: 'options',
           message: 'What would you like to do?',
-          choices: ['1. View Products for Sale', '2. View Low Inventory', '3. Add to Inventory', '4. Add New Product', '5. Placing Order', '6. EXIT\n\n']        
+          choices: ['1. View Product Sales by Department', '2. Create New Department', '3. EXIT\n\n']        
       }
 
   ])
   .then(function(answers) {
-      if(answers.options === '1. View Products for Sale') {
-        console.log('1. View Products for Sale');
-        viewProducts();
+      if(answers.options === '1. View Product Sales by Department') {
+        console.log('1. View Product Sales by Department');
+        viewProductSalesByDepartment();
 
-      } else if(answers.options === '2. View Low Inventory') {
-        console.log('2. View Low Inventory');
-        viewLowInventory();
-
-      } else if(answers.options === '3. Add to Inventory') {
-        console.log('3. Add to Inventory');    
-        addInventory();
-
-      } else if(answers.options === '4. Add New Product') {
-        console.log('4. Add New Product');  
-        addProduct();
-
-      } else if(answers.options === '5. Placing Order') {
-        console.log('5. Placing Order');  
-        placingOrder();
-        
+      } else if(answers.options === '2. Create New Department') {
+        console.log('2. Create New Department');
+        createNewDepartment();
+    
       } else {
-        console.log('6. EXIT');
+        console.log('3. EXIT');
         console.log("Good Bye.");
         connection.end();
       }
   });  
 }
+
+//-------------------------------------------------------------
+viewProductSalesByDepartment = function() {
+    console.log('viewProductSalesByDepartment() => called');
+    connection.query("SELECT * FROM departments", function(err, res) {
+        if (err) throw err;
+        console.table(res);
+        console.log('\n');
+    });
+}
+
+
+createNewDepartment = function() {
+    console.log('createNewDepartment() => called');
+
+    inquirer
+    .prompt([
+      {
+        type: 'input',
+        name: 'department',
+        message: 'What is the name of the department you would like to add? ',
+      },
+      {
+        type: 'number',
+        name: 'overHeadCosts',
+        message: 'How much is the over head cost for this department? ',
+      }
+    ])
+    .then(function(answers) {
+      const {department, overHeadCosts} = answers;
+      
+      connection.query(
+        "INSERT INTO departments SET ?",
+        {
+          department_name: department,
+          over_head_costs: overHeadCosts,
+          product_sales: 0,
+          total_profit: 0
+          
+        },
+        function(err, res) {
+          if (err) throw err;
+          console.log(res.affectedRows + " product inserted!\n");
+        }
+      );      
+    });  
+}
+
+
+//-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 viewProducts = function() {
   connection.query("SELECT * FROM products", function(err, res) {
