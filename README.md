@@ -38,9 +38,9 @@ There are three individual applications for customers and supervisors.
 
 3. `bamazonSupervisor.js`
     * View Product Sales by Department
-        ### ![use-example](./assets/images/thumbnails/supervisor-1.gif)
+        ### ![use-example](./assets/images/thumbnails/Supervisor-1.gif)
     * Create New Department        
-        ### ![use-example](./assets/images/thumbnails/supervisor-2.gif)
+        ### ![use-example](./assets/images/thumbnails/Supervisor-2.gif)
 
 ## Getting Started
 
