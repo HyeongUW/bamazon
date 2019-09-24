@@ -3,39 +3,44 @@
 ## Description
 This is an Amazon-like storefront which will take in orders from customers and deplete stock from the store's inventory. This Command Line Interface (CLI) application supports users to manage products in stock. 
 
-There are two individual applications for customers and supervisors.
+There are three individual applications for customers and supervisors.
 
 1. `bamazonCustomer.js`
+    * Placing Order
+
+2. `bamazonManager.js`
     * View Products for Sale
     * View Low Inventory
     * Add to Inventory
     * Add New Product
-    * Placing Order
 
-2. `bamazonSupervisor.js`
+3. `bamazonSupervisor.js`
     * View Product Sales by Department
     * Create New Department
 
-
 ## Use Example:
 
-    1. View Products for Sale
-### ![use-example](./assets/images/1.gif)
+1. `bamazonCustomer.js`
+    * Placing Order
+        ### ![use-example](./assets/images/thumbnails/customer.gif)
+         
+2. `bamazonManager.js`
+    * View Products for Sale
+        ### ![use-example](./assets/images/thumbnails/manager-1.gif)
+    *  View Low Inventory    
+        ### ![use-example](./assets/images/thumbnails/manager-2.gif)
 
-    2. View Low Inventory    
-### ![use-example](./assets/images/2.gif)
+    * Add to Inventory    
+        ### ![use-example](./assets/images/thumbnails/manager-3.gif)
 
-    3. Add to Inventory    
-### ![use-example](./assets/images/3.gif)
+    * Add New Product
+        ### ![use-example](./assets/images/thumbnails/manager-4.gif)
 
-    4. Add New Product
-### ![use-example](./assets/images/4.gif)
-
-        * Result
-!['4.b'](https://github.com/HyeongUW/bamazon/blob/master/assets/images/4.b.PNG)   
-
-    5. Placing Order
-### ![use-example](./assets/images/5.gif)
+3. `bamazonSupervisor.js`
+    * View Product Sales by Department
+        ### ![use-example](./assets/images/thumbnails/supervisor-1.gif)
+    * Create New Department        
+        ### ![use-example](./assets/images/thumbnails/supervisor-2.gif)
 
 ## Getting Started
 
@@ -52,9 +57,10 @@ There are two individual applications for customers and supervisors.
 
 1. Navigate in to the directory and use command line interface to run the following command.
     * `node bamazonCustomer.js`
+    * `node bamazonManager.js`
+    * `node bamazonSupervisor.js`
 
 2. Follow the instruction on the menu. 
-!['menu'](./assets/images/menu.png)
 
 ## Deployed Page:
 * Not Available for this application.
@@ -62,11 +68,13 @@ There are two individual applications for customers and supervisors.
 ## Enhancements
 
 * list of possible enhancements
-    - [ ] Challenge #3: Supervisor View has not been implemented yet.
-        * [ ] View Product Sales by department
+    - [x] Challenge #3: Supervisor View has not been implemented yet.
+        * [x] View Product Sales by department
         * [x] Department
     * Create New Department
         * This app should track product sales across your store's departments and should provide a summary of the highest-grossing departments in the store.
+
+    * All the listed enhancements are implemented.
     
 ## Authors
 
